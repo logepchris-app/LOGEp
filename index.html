@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -54,7 +54,7 @@
             <div class="flex justify-between h-24 items-center">
                 <!-- Logo -->
                 <a href="#" class="flex-shrink-0 flex items-center gap-2 cursor-pointer outline-none">
-                    <img src="https://storage.googleapis.com/chat-staging-original-images-us-central1/chat-staging-8e12089b706c9e83b42f61e86ba2c71f-0" alt="LOGEp Logo" class="h-16 md:h-20 object-contain" />
+                    <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-16 md:h-20 object-contain" />
                 </a>
 
                 <!-- Desktop Menu -->
@@ -91,7 +91,7 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-6 space-y-2 shadow-2xl absolute w-full">
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-6 space-y-2 shadow-2xl absolute w-full z-40">
             <a href="#" class="block px-3 py-3 text-blue-400 font-medium bg-slate-800 rounded-md">
                 <span class="lang-gr">Αρχική</span><span class="lang-en hidden-lang">Home</span>
             </a>
@@ -107,27 +107,24 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="relative bg-slate-900 overflow-hidden">
-        <!-- Abstract background pattern -->
-        <div class="absolute inset-0 opacity-20">
-            <svg class="absolute left-0 top-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,0 L100,100 L0,100 Z" fill="#1e293b" />
-            </svg>
-        </div>
+    <!-- Hero Section (Banner με Φωτογραφία) -->
+    <div class="relative bg-slate-900 overflow-hidden" style="background-image: url('LOGEp.jpg'); background-size: cover; background-position: center;">
+        
+        <!-- Η σκούρα μεμβράνη (overlay) για να διαβάζονται τα γράμματα πάνω από τη φώτο -->
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="pt-20 pb-24 md:pt-32 md:pb-32 lg:w-2/3">
-                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-medium text-sm mb-6 border border-blue-500/30">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-medium text-sm mb-6 border border-blue-500/30 backdrop-blur-sm">
                     <span class="flex h-2 w-2 rounded-full bg-blue-400 mr-2"></span>
                     <span class="lang-gr">Αξιόπιστες Λογιστικές & Φοροτεχνικές Υπηρεσίες</span>
                     <span class="lang-en hidden-lang">Reliable Accounting & Tax Services</span>
                 </div>
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-md">
                     <span class="lang-gr">Η ανάπτυξη της επιχείρησής σας, <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">σε ασφαλή χέρια.</span></span>
                     <span class="lang-en hidden-lang">Your business growth, <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">in safe hands.</span></span>
                 </h2>
-                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl leading-relaxed drop-shadow-sm">
                     <span class="lang-gr">
                         Εξειδικευμένες λύσεις λογιστικής, μισθοδοσίας και ίδρυσης εταιρειών στην Ελλάδα. 
                         Αναλαμβάνουμε την πολυπλοκότητα για να επικεντρωθείτε σε αυτό που ξέρετε καλύτερα.
@@ -145,7 +142,7 @@
                         <span class="lang-en hidden-lang">Consult with us</span>
                         <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                     </a>
-                    <a href="#services" class="bg-transparent border border-slate-500 hover:border-white text-white px-8 py-4 rounded-md font-semibold text-lg transition-all flex items-center justify-center">
+                    <a href="#services" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-md font-semibold text-lg transition-all flex items-center justify-center">
                         <span class="lang-gr">Οι Υπηρεσίες μας</span>
                         <span class="lang-en hidden-lang">Our Services</span>
                     </a>
@@ -297,7 +294,7 @@
                         <span class="lang-en hidden-lang">Request a free quote</span>
                     </h3>
                     
-                    <form id="contact-form" class="space-y-4" enctype="text/plain">
+                    <form id="contact-form" class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-1">
                                 <span class="lang-gr">Ονοματεπώνυμο</span><span class="lang-en hidden-lang">Full Name</span>
@@ -342,7 +339,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center mb-6">
-                        <img src="https://storage.googleapis.com/chat-staging-original-images-us-central1/chat-staging-8e12089b706c9e83b42f61e86ba2c71f-0" alt="LOGEp Logo" class="h-16 object-contain" />
+                        <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-16 object-contain" />
                     </div>
                     <p class="mb-4 max-w-sm text-sm leading-relaxed">
                         <span class="lang-gr">Αξιόπιστες φοροτεχνικές και λογιστικές υπηρεσίες με έμφαση στην απλοποίηση των διαδικασιών. Εστιάζουμε στη δημιουργία μακροχρόνιων σχέσεων εμπιστοσύνης. We make it simple!</span>
@@ -427,14 +424,11 @@
     </div>
 
     <script>
-        // Αρχικοποίηση των εικονιδίων Lucide
         lucide.createIcons();
 
-        // Μεταβλητές & Δεδομένα για το Website
         let currentLanguage = 'gr';
         let activeModalService = null;
 
-        // Τα αυθεντικά κείμενα από το logep.com (Αγγλικά και Ελληνική μετάφραση)
         const servicesData = {
             'accounting': {
                 icon: '<i data-lucide="calculator" class="w-5 h-5"></i>',
@@ -611,15 +605,12 @@
             }
         };
 
-        // Αλλαγή Γλώσσας (Language Toggle Logic)
         function toggleLanguage() {
             currentLanguage = currentLanguage === 'gr' ? 'en' : 'gr';
             
-            // Ενημέρωση των κουμπιών
             document.getElementById('current-lang').innerText = currentLanguage.toUpperCase();
             document.getElementById('current-lang-mobile').innerText = currentLanguage.toUpperCase();
 
-            // Εναλλαγή των CSS classes για την απόκρυψη/εμφάνιση
             const grElements = document.querySelectorAll('.lang-gr');
             const enElements = document.querySelectorAll('.lang-en');
 
@@ -631,13 +622,11 @@
                 grElements.forEach(el => el.classList.add('hidden-lang'));
             }
             
-            // Αν είναι ανοιχτό κάποιο Modal, ανανέωσε το περιεχόμενό του στη νέα γλώσσα
             if (activeModalService) {
                 renderModalContent(activeModalService);
             }
         }
 
-        // Logic για τα Modals (Υπηρεσίες)
         const modal = document.getElementById('service-modal');
         const modalTitle = document.getElementById('modal-title-text');
         const modalContent = document.getElementById('modal-content');
@@ -647,10 +636,9 @@
             activeModalService = serviceId;
             renderModalContent(serviceId);
             modal.classList.remove('hidden');
-            // Μικρή καθυστέρηση για το CSS animation
             setTimeout(() => { modal.classList.add('active'); }, 10);
-            document.body.style.overflow = 'hidden'; // Αποτροπή scroll στο background
-            lucide.createIcons(); // Ξαναφορτώνει τα εικονίδια αν υπάρχουν νέα
+            document.body.style.overflow = 'hidden'; 
+            lucide.createIcons(); 
         }
 
         function renderModalContent(serviceId) {
@@ -666,19 +654,17 @@
             modal.classList.remove('active');
             setTimeout(() => { 
                 modal.classList.add('hidden'); 
-                document.body.style.overflow = 'auto'; // Επαναφορά scroll
+                document.body.style.overflow = 'auto'; 
                 activeModalService = null;
-            }, 200); // Ίδιος χρόνος με το CSS transition
+            }, 200); 
         }
 
-        // Κλείσιμο modal αν ο χρήστης κάνει κλικ έξω από αυτό
         modal.addEventListener('click', function(e) {
             if (e.target === this) {
                 closeModal();
             }
         });
 
-        // Αποστολή φόρμας επικοινωνίας
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault(); 
             
@@ -699,7 +685,6 @@
             window.open('mailto:info@logep.com?subject=' + subject + '&body=' + body, '_top');
         });
 
-        // Μενού για κινητά
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -707,7 +692,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Κλείσιμο του μενού στα κινητά όταν πατηθεί κάποιο link
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
