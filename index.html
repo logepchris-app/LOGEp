@@ -40,14 +40,13 @@
     </div>
 
     <!-- Main Navigation (Λευκή Μπάρα) -->
-    <nav class="bg-white shadow-md sticky top-0 z-50 border-b border-slate-200">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
+            <div class="flex justify-between h-24 items-center">
                 
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <!-- Προστέθηκε rounded-lg και shadow για να δείχνει το μαύρο φόντο της εικόνας σαν επαγγελματικό κουμπί/σφραγίδα -->
-                    <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-12 w-auto rounded-lg shadow-sm border border-slate-200">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-16 w-auto bg-slate-900 rounded-lg shadow-md p-2">
                 </div>
 
                 <!-- Desktop Menu -->
@@ -55,18 +54,18 @@
                     <a href="#" class="text-blue-600 font-bold border-b-2 border-blue-600 px-1 py-2">
                         <span class="lang-gr">Αρχική</span><span class="lang-en hidden-lang">Home</span>
                     </a>
-                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors px-1 py-2">
+                    <a href="#about" class="text-slate-700 hover:text-blue-600 font-bold transition-colors px-1 py-2">
                         <span class="lang-gr">Εταιρεία</span><span class="lang-en hidden-lang">About Us</span>
                     </a>
-                    <a href="#services" class="text-slate-600 hover:text-blue-600 font-medium transition-colors px-1 py-2">
+                    <a href="#services" class="text-slate-700 hover:text-blue-600 font-bold transition-colors px-1 py-2">
                         <span class="lang-gr">Υπηρεσίες</span><span class="lang-en hidden-lang">Services</span>
                     </a>
-                    <a href="#contact-section" class="bg-red-600 text-white px-6 py-2.5 rounded-md font-bold hover:bg-red-700 transition-colors shadow-sm">
+                    <a href="#contact-section" class="bg-red-600 text-white px-6 py-2.5 rounded-md font-bold hover:bg-red-700 transition-colors shadow-md">
                         <span class="lang-gr">Επικοινωνία</span><span class="lang-en hidden-lang">Contact</span>
                     </a>
                     
                     <!-- Language Switcher -->
-                    <button id="lang-btn" class="ml-4 flex items-center text-slate-700 hover:text-blue-600 font-bold bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-md border border-slate-200 transition-colors">
+                    <button id="lang-btn" class="ml-4 flex items-center text-slate-700 hover:text-blue-600 font-bold bg-slate-100 px-3 py-1.5 rounded-md border border-slate-200 transition-colors">
                         <i data-lucide="globe" class="w-4 h-4 mr-2"></i>
                         <span id="current-lang">GR</span>
                     </button>
@@ -74,10 +73,10 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center gap-4">
-                    <button id="mobile-lang-btn" class="flex items-center text-slate-700 hover:text-blue-600 font-bold bg-slate-100 px-3 py-1.5 rounded-md border border-slate-200">
+                    <button id="mobile-lang-btn" class="flex items-center text-slate-700 font-bold bg-slate-100 px-3 py-1.5 rounded-md border border-slate-200">
                         <span id="mobile-current-lang">GR</span>
                     </button>
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-blue-600 focus:outline-none">
                         <i data-lucide="menu" class="w-8 h-8" id="menu-icon"></i>
                     </button>
                 </div>
@@ -86,13 +85,13 @@
 
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-1 shadow-xl absolute w-full">
-            <a href="#" class="block px-3 py-3 text-blue-600 font-bold bg-blue-50 rounded-md">
+            <a href="#" class="block px-3 py-3 text-blue-600 font-bold bg-slate-50 rounded-md">
                 <span class="lang-gr">Αρχική</span><span class="lang-en hidden-lang">Home</span>
             </a>
-            <a href="#about" class="block px-3 py-3 text-slate-600 font-medium hover:bg-slate-50 rounded-md">
+            <a href="#about" class="block px-3 py-3 text-slate-700 font-bold hover:bg-slate-50 rounded-md">
                 <span class="lang-gr">Εταιρεία</span><span class="lang-en hidden-lang">About Us</span>
             </a>
-            <a href="#services" class="block px-3 py-3 text-slate-600 font-medium hover:bg-slate-50 rounded-md">
+            <a href="#services" class="block px-3 py-3 text-slate-700 font-bold hover:bg-slate-50 rounded-md">
                 <span class="lang-gr">Υπηρεσίες</span><span class="lang-en hidden-lang">Services</span>
             </a>
             <a href="#contact-section" class="block px-3 py-3 mt-4 text-center bg-red-600 text-white font-bold rounded-md">
@@ -130,7 +129,7 @@
                     <strong class="text-white italic text-2xl">"We make it simple!"</strong>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact-section" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-all shadow-lg flex items-center justify-center group">
+                    <a href="#contact-section" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg flex items-center justify-center group">
                         <span class="lang-gr">Συμβουλευτείτε μας</span>
                         <span class="lang-en hidden-lang">Consult Us</span>
                         <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
@@ -225,7 +224,7 @@
     </div>
 
     <!-- Why Choose Us & Contact Section -->
-    <div id="about" class="py-24 bg-slate-900 text-white border-t-4 border-blue-600">
+    <div id="contact-section" class="py-24 bg-slate-900 text-white border-t-4 border-blue-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-start">
                 
@@ -244,7 +243,7 @@
                         <div class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-red-500 mr-4 flex-shrink-0 mt-1"></i>
                             <div>
-                                <h4 class="text-xl font-bold mb-1">
+                                <h4 class="text-xl font-semibold mb-1">
                                     <span class="lang-gr">Πολυετής Εμπειρία</span><span class="lang-en hidden-lang">Years of Experience</span>
                                 </h4>
                                 <p class="text-slate-400">
@@ -256,7 +255,7 @@
                         <div class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-red-500 mr-4 flex-shrink-0 mt-1"></i>
                             <div>
-                                <h4 class="text-xl font-bold mb-1">
+                                <h4 class="text-xl font-semibold mb-1">
                                     <span class="lang-gr">Εξατομικευμένη Προσέγγιση</span><span class="lang-en hidden-lang">Personalized Approach</span>
                                 </h4>
                                 <p class="text-slate-400">
@@ -268,335 +267,382 @@
                         <div class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-red-500 mr-4 flex-shrink-0 mt-1"></i>
                             <div>
-                                <h4 class="text-xl font-bold mb-1">
+                                <h4 class="text-xl font-semibold mb-1">
                                     <span class="lang-gr">Σύγχρονα Εργαλεία</span><span class="lang-en hidden-lang">Modern Tools</span>
                                 </h4>
                                 <p class="text-slate-400">
                                     <span class="lang-gr">Χρησιμοποιούμε τεχνολογίες αιχμής για άμεση πληροφόρηση και μηδενικά σφάλματα.</span>
-                                    <span class="lang-en hidden-lang">We use cutting-edge technologies for instant reporting and zero errors.</span>
+                                    <span class="lang-en hidden-lang">We use cutting-edge technology for instant information and zero errors.</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Quick Contact Form (Web3Forms API) -->
-                <div id="contact-section" class="bg-white rounded-2xl p-8 shadow-2xl text-slate-800 relative z-10">
-                    <h3 class="text-2xl font-bold mb-2 text-slate-900">
-                        <span class="lang-gr">Ζητήστε μια δωρεάν εκτίμηση</span>
-                        <span class="lang-en hidden-lang">Request a free quote</span>
+                <!-- Contact Form (Web3Forms API) -->
+                <div class="bg-white rounded-2xl p-8 shadow-2xl text-slate-800">
+                    <h3 class="text-2xl font-bold mb-6 text-slate-900">
+                        <span class="lang-gr">Επικοινωνήστε μαζί μας</span>
+                        <span class="lang-en hidden-lang">Contact Us</span>
                     </h3>
-                    <p class="text-slate-500 mb-6 text-sm">
-                        <span class="lang-gr">Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε άμεσα μαζί σας.</span>
-                        <span class="lang-en hidden-lang">Fill out the form and we will contact you shortly.</span>
-                    </p>
                     
                     <form id="contact-form" class="space-y-4">
-                        <!-- ΕΔΩ ΜΠΑΙΝΕΙ ΤΟ ACCESS KEY ΑΠΟ ΤΟ ΠΡΟΗΓΟΥΜΕΝΟ ΜΗΝΥΜΑ ΣΑΣ -->
+                        <!-- Το Access Key σας από το Web3Forms -->
                         <input type="hidden" name="access_key" value="3d6b26d7-3685-4e90-aefb-fb409b3db5d9">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="hidden" name="subject" value="Νέο μήνυμα από το LOGEp Website">
 
                         <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-1">
+                            <label class="block text-sm font-medium text-slate-700 mb-1">
                                 <span class="lang-gr">Ονοματεπώνυμο</span><span class="lang-en hidden-lang">Full Name</span>
                             </label>
                             <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required />
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-1">Email</label>
-                            <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required />
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                            <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="email@company.com" required />
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-1">
-                                <span class="lang-gr">Υπηρεσία Ενδιαφέροντος</span><span class="lang-en hidden-lang">Service of Interest</span>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">
+                                <span class="lang-gr">Τηλέφωνο (Προαιρετικό)</span><span class="lang-en hidden-lang">Phone (Optional)</span>
                             </label>
-                            <select name="service" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white font-medium">
-                                <option class="lang-gr" value="Λογιστικά / Φοροτεχνικά">Λογιστικά / Φοροτεχνικά</option>
-                                <option class="lang-en hidden-lang" value="Accounting / Tax">Accounting / Tax</option>
-                                
-                                <option class="lang-gr" value="Μισθοδοσία">Μισθοδοσία</option>
-                                <option class="lang-en hidden-lang" value="Payroll">Payroll</option>
-                                
-                                <option class="lang-gr" value="Ίδρυση Εταιρείας">Ίδρυση Εταιρείας</option>
-                                <option class="lang-en hidden-lang" value="Company Establishment">Company Establishment</option>
-                                
-                                <option class="lang-gr" value="Άλλο">Άλλο</option>
-                                <option class="lang-en hidden-lang" value="Other">Other</option>
-                            </select>
+                            <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" />
                         </div>
-                        <!-- ΠΕΔΙΟ ΣΧΟΛΙΩΝ -->
                         <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-1">
+                            <label class="block text-sm font-medium text-slate-700 mb-1">
                                 <span class="lang-gr">Μήνυμα / Σχόλια</span><span class="lang-en hidden-lang">Message / Comments</span>
                             </label>
-                            <textarea name="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="..." required></textarea>
+                            <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required placeholder="Γράψτε το ερώτημά σας εδώ..."></textarea>
                         </div>
-
-                        <button type="submit" id="submit-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors mt-4 shadow-md flex justify-center items-center">
-                            <span class="lang-gr" id="btn-text-gr">Αποστολή Μηνύματος</span>
-                            <span class="lang-en hidden-lang" id="btn-text-en">Send Message</span>
-                        </button>
-
+                        
                         <!-- Μηνύματα Επιτυχίας/Σφάλματος -->
-                        <div id="form-success" class="text-center font-bold text-green-600 mt-3 p-2 bg-green-50 rounded-lg border border-green-200">
+                        <div id="form-success" class="p-3 bg-green-100 text-green-700 rounded-lg text-sm font-medium text-center">
                             <span class="lang-gr">Το μήνυμά σας στάλθηκε με επιτυχία!</span>
                             <span class="lang-en hidden-lang">Your message was sent successfully!</span>
                         </div>
-                        <div id="form-error" class="text-center font-bold text-red-600 mt-3 p-2 bg-red-50 rounded-lg border border-red-200">
-                            <span class="lang-gr">Υπήρξε σφάλμα. Προσπαθήστε ξανά.</span>
-                            <span class="lang-en hidden-lang">Something went wrong. Please try again.</span>
+                        <div id="form-error" class="p-3 bg-red-100 text-red-700 rounded-lg text-sm font-medium text-center">
+                            <span class="lang-gr">Υπήρξε σφάλμα. Παρακαλώ δοκιμάστε ξανά.</span>
+                            <span class="lang-en hidden-lang">There was an error. Please try again.</span>
                         </div>
+
+                        <button type="submit" id="submit-button" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-colors mt-4 shadow-md flex justify-center items-center">
+                            <span class="lang-gr">Αποστολή Μηνύματος</span>
+                            <span class="lang-en hidden-lang">Send Message</span>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ΝΕΑ ΕΝΟΤΗΤΑ: NewCRM Banner -->
-    <div class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 py-12 border-t border-slate-800 shadow-inner">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-3xl font-black text-white mb-2 tracking-wide">NewCRM</h3>
-                <p class="text-blue-300 text-lg font-medium">
-                    <span class="lang-gr">Η νέα μας σύγχρονη πλατφόρμα διαχείρισης και εξυπηρέτησης πελατών.</span>
-                    <span class="lang-en hidden-lang">Our new modern customer service and management platform.</span>
-                </p>
-            </div>
-            
-            <!-- ΕΔΩ ΒΑΖΕΤΕ ΤΟ LINK ΓΙΑ ΤΟ NEWCRM ΣΤΟ href="" -->
-            <a href="https://newcrm.gr/landing.html" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg hover:shadow-blue-500/50 flex items-center transform hover:-translate-y-1">
-                <span class="lang-gr">Είσοδος στο NewCRM</span>
-                <span class="lang-en hidden-lang">Access NewCRM</span>
-                <i data-lucide="external-link" class="ml-2 w-5 h-5"></i>
-            </a>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-black text-slate-400 py-12 border-t border-slate-800">
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-4 bg-white/5 inline-block p-2 rounded-lg">
-                        <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-10 w-auto">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="LOGO-NEW-200-72.png" alt="LOGEp Logo" class="h-10 w-auto bg-white/5 rounded p-1">
                     </div>
                     <p class="mb-4 max-w-sm">
-                        <span class="lang-gr">Αξιόπιστες φοροτεχνικές και λογιστικές υπηρεσίες. We make it simple!</span>
-                        <span class="lang-en hidden-lang">Reliable tax and accounting services. We make it simple!</span>
+                        <span class="lang-gr">Αξιόπιστες φοροτεχνικές και λογιστικές υπηρεσίες με έμφαση στην απλοποίηση των διαδικασιών. We make it simple!</span>
+                        <span class="lang-en hidden-lang">Reliable tax and accounting services with a focus on simplifying processes. We make it simple!</span>
                     </p>
                 </div>
                 
                 <div>
-                    <h3 class="text-white font-bold mb-4 uppercase">
+                    <h3 class="text-white font-semibold mb-4">
                         <span class="lang-gr">Υπηρεσίες</span><span class="lang-en hidden-lang">Services</span>
                     </h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" onclick="openModal('modal-accounting'); return false;" class="hover:text-red-500 transition-colors">Accounting & Tax</a></li>
-                        <li><a href="#" onclick="openModal('modal-payroll'); return false;" class="hover:text-red-500 transition-colors">Payroll</a></li>
-                        <li><a href="#" onclick="openModal('modal-establishment'); return false;" class="hover:text-red-500 transition-colors">Establishment in Greece</a></li>
+                    <ul class="space-y-2">
+                        <li><a href="#" onclick="openModal('modal-accounting'); return false;" class="hover:text-blue-400 transition-colors">Accounting & Tax</a></li>
+                        <li><a href="#" onclick="openModal('modal-payroll'); return false;" class="hover:text-blue-400 transition-colors">Payroll</a></li>
+                        <li><a href="#" onclick="openModal('modal-establishment'); return false;" class="hover:text-blue-400 transition-colors">Establishment in Greece</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-white font-bold mb-4 uppercase">
+                    <h3 class="text-white font-semibold mb-4">
                         <span class="lang-gr">Επικοινωνία</span><span class="lang-en hidden-lang">Contact</span>
                     </h3>
-                    <ul class="space-y-3 text-sm">
+                    <ul class="space-y-3">
                         <li class="flex items-start">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-red-600 mr-2 flex-shrink-0"></i>
-                            <span>Αριστοτέλους 11-15, <br/>Αθήνα, T.K. 10432</span>
+                            <i data-lucide="map-pin" class="w-5 h-5 text-red-500 mr-2 flex-shrink-0"></i>
+                            <a href="https://maps.google.com/?q=Αριστοτέλους+11-15,+Αθήνα+10432" target="_blank" class="hover:text-white transition-colors">
+                                <span class="lang-gr">Αριστοτέλους 11-15, <br/>Αθήνα, T.K. 10432</span>
+                                <span class="lang-en hidden-lang">Aristotelous 11-15, <br/>Athens, P.C. 10432</span>
+                            </a>
                         </li>
                         <li class="flex items-center">
-                            <i data-lucide="phone" class="w-5 h-5 text-red-600 mr-2 flex-shrink-0"></i>
-                            <span>0030 2102207445</span>
+                            <i data-lucide="phone" class="w-5 h-5 text-red-500 mr-2 flex-shrink-0"></i>
+                            <a href="tel:+302102207445" class="hover:text-white transition-colors">0030 2102207445</a>
                         </li>
                         <li class="flex items-center">
-                            <i data-lucide="mail" class="w-5 h-5 text-red-600 mr-2 flex-shrink-0"></i>
-                            <span>info@logep.com</span>
+                            <i data-lucide="mail" class="w-5 h-5 text-red-500 mr-2 flex-shrink-0"></i>
+                            <a href="mailto:info@logep.com" class="hover:text-white transition-colors">info@logep.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="pt-8 border-t border-slate-800 text-xs text-center md:text-left flex justify-between items-center">
-                <p>LOGEp - Copyright © 2026. All rights reserved.</p>
+            <div class="pt-8 border-t border-slate-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+                <p>LOGEp - Copyright © <span id="year"></span>. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">
+                        <span class="lang-gr">Πολιτική Απορρήτου</span><span class="lang-en hidden-lang">Privacy Policy</span>
+                    </a>
+                    <a href="#" class="hover:text-white transition-colors">
+                        <span class="lang-gr">Όροι Χρήσης</span><span class="lang-en hidden-lang">Terms of Use</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Service Modal (Popup) -->
-    <div id="service-modal" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm opacity-0 pointer-events-none">
-        <div class="modal-content bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] flex flex-col shadow-2xl relative scale-95">
-            <!-- Modal Header -->
-            <div class="px-8 py-6 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white rounded-t-2xl z-10">
-                <h3 id="modal-title" class="text-2xl font-black text-slate-900 flex items-center">
-                    <span id="modal-icon" class="text-red-600 mr-3 flex items-center"></span>
-                    <span id="modal-title-text">Service Name</span>
-                </h3>
-                <button onclick="closeModal()" class="text-slate-400 hover:text-red-600 hover:bg-red-50 p-2 rounded-full transition-colors focus:outline-none">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
+    <!-- Service Modals (Popups) -->
+    <div id="service-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden opacity-0">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <div class="modal-content bg-white w-full max-w-3xl rounded-2xl shadow-2xl relative z-10 mx-4 max-h-[90vh] flex flex-col scale-95">
+            <!-- Close button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-full p-2 transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
             
-            <!-- Modal Body -->
-            <div class="p-8 overflow-y-auto">
-                <div id="modal-content" class="text-slate-600 leading-relaxed text-lg"></div>
+            <!-- Modal Body content will be injected here -->
+            <div id="modal-body" class="p-8 md:p-10 overflow-y-auto">
+                <!-- Content -->
             </div>
-            
-            <!-- Modal Footer -->
-            <div class="px-8 py-6 border-t border-slate-100 bg-slate-50 rounded-b-2xl text-right">
-                <button onclick="closeModal(); document.getElementById('contact-section').scrollIntoView();" class="inline-flex items-center justify-center px-6 py-3 font-bold rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors shadow-sm">
-                    <span class="lang-gr">Ενδιαφέρομαι</span>
-                    <span class="lang-en hidden-lang">I am interested</span>
-                </button>
-            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Content for Modals -->
+    <div id="modal-accounting" class="hidden">
+        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="calculator" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Accounting & Tax services</h3>
+        <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
+            <p>
+                <span class="lang-gr">Οι λογιστικές και φορολογικές υπηρεσίες μας διασφαλίζουν την πλήρη συμμόρφωση των δραστηριοτήτων σας στην Ελλάδα.</span>
+                <span class="lang-en hidden-lang">Our accounting and tax services secure total compliance of your activities in Greece.</span>
+            </p>
+            <p>
+                <span class="lang-gr">Προσφέρουμε την απόλυτη ισορροπία μεταξύ υψηλής ποιότητας υπηρεσιών και του κόστους. Οι επαγγελματίες μας επικεντρώνονται στην αποσαφήνιση πολύπλοκων φορολογικών θεμάτων και στην έγκαιρη ενημέρωσή σας, επιτρέποντάς σας να επικεντρωθείτε στη βασική σας δραστηριότητα.</span>
+                <span class="lang-en hidden-lang">We offer the absolute balance between quality of service and budget. Our professionals focus on clarifying complicated tax issues, informing you in good time, and letting you focus on your core business.</span>
+            </p>
+            <ul class="list-disc pl-5 space-y-2 mt-4 text-slate-700">
+                <li><span class="lang-gr">Λογιστική Παρακολούθηση</span><span class="lang-en hidden-lang">Accounting monitoring</span></li>
+                <li><span class="lang-gr">Σύνταξη αναφορών του ομίλου</span><span class="lang-en hidden-lang">Group reporting preparation</span></li>
+                <li><span class="lang-gr">Υποστήριξη σε φορολογικούς ελέγχους</span><span class="lang-en hidden-lang">Support in tax inspections</span></li>
+                <li><span class="lang-gr">Υποβολή Φορολογικών Δηλώσεων</span><span class="lang-en hidden-lang">Submission of Tax Declarations</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-payroll" class="hidden">
+        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="file-text" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Payroll services</h3>
+        <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
+            <p>
+                <span class="lang-gr">Η μισθοδοσία αποτελεί την πιο ευαίσθητη περιοχή για τη συμμόρφωση της εταιρείας σας στην Ελλάδα. Είναι εξαιρετικά σημαντική για τις σχέσεις με τους υπαλλήλους σας.</span>
+                <span class="lang-en hidden-lang">Payroll is the most sensible area for your company's compliance in Greece. Also really important for relations with your employees.</span>
+            </p>
+            <p>
+                <span class="lang-gr">Αφήστε την ομάδα μας να δημιουργήσει και να σας προτείνει λύσεις που συνδέονται με τον σχεδιασμό αμοιβών των υπαλλήλων σας.</span>
+                <span class="lang-en hidden-lang">Let our team structure and propose to you solutions connected with your employees' remuneration planning.</span>
+            </p>
+            <ul class="list-disc pl-5 space-y-2 mt-4 text-slate-700">
+                <li><span class="lang-gr">Υπολογισμός μισθοδοσίας</span><span class="lang-en hidden-lang">Payroll calculation</span></li>
+                <li><span class="lang-gr">Υποβολή εντύπων σε Εργάνη/ΕΦΚΑ</span><span class="lang-en hidden-lang">Submission of ERGANI / EFKA documents</span></li>
+                <li><span class="lang-gr">Υποστήριξη σε ελέγχους από τις αρμόδιες αρχές</span><span class="lang-en hidden-lang">Support in inspections from corresponding authorities</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-establishment" class="hidden">
+        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="building" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Establishment in Greece</h3>
+        <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
+            <p>
+                <span class="lang-gr">Ένας από τους βασικούς τομείς στους οποίους ειδικευόμαστε είναι η παροχή υπηρεσιών σε ξένες εταιρείες που επιθυμούν να επεκτείνουν τις δραστηριότητές τους στην Ελλάδα, είτε με την ίδρυση υποκαταστήματος (branch) είτε με τη δημιουργία νέας ελληνικής εταιρείας (SA, LLC ή PC).</span>
+                <span class="lang-en hidden-lang">One of the main areas where we specialize is providing services to foreign companies intending to expand their activities in Greece, either by establishing a branch or forming a new Greek company (SA, LLC, or PC).</span>
+            </p>
+            <ul class="list-disc pl-5 space-y-2 mt-4 text-slate-700">
+                <li><span class="lang-gr">Εκπροσώπηση ξένων εταιρειών ή μετόχων στις ελληνικές αρχές (Γ.Ε.Μ.Η., Δ.Ο.Υ.)</span><span class="lang-en hidden-lang">Representation of foreign companies or shareholders in Greek authorities (GEMI, Tax authorities)</span></li>
+                <li><span class="lang-gr">Προετοιμασία των απαραίτητων εγγράφων για την ολοκλήρωση της ίδρυσης</span><span class="lang-en hidden-lang">Preparation of necessary documentation to complete the establishment</span></li>
+                <li><span class="lang-gr">Λήψη Ελληνικού ΑΦΜ και κωδικών TAXIS για το νομικό πρόσωπο/επενδυτή</span><span class="lang-en hidden-lang">Obtaining Greek Tax Number and Taxisnet codes for the legal entity / investor</span></li>
+            </ul>
         </div>
     </div>
 
     <!-- Scripts -->
     <script>
-        // Αρχικοποίηση Εικονιδίων
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Μετάφραση
-        let currentLang = 'gr';
-        
-        function updateLanguageUI() {
-            document.getElementById('current-lang').innerText = currentLang.toUpperCase();
-            document.getElementById('mobile-current-lang').innerText = currentLang.toUpperCase();
-            
-            const grElements = document.querySelectorAll('.lang-gr');
-            const enElements = document.querySelectorAll('.lang-en');
-
-            if (currentLang === 'gr') {
-                grElements.forEach(el => el.classList.remove('hidden-lang'));
-                enElements.forEach(el => el.classList.add('hidden-lang'));
-            } else {
-                enElements.forEach(el => el.classList.remove('hidden-lang'));
-                grElements.forEach(el => el.classList.add('hidden-lang'));
-            }
-        }
-
-        document.getElementById('lang-btn').addEventListener('click', () => {
-            currentLang = currentLang === 'gr' ? 'en' : 'gr';
-            updateLanguageUI();
-        });
-
-        document.getElementById('mobile-lang-btn').addEventListener('click', () => {
-            currentLang = currentLang === 'gr' ? 'en' : 'gr';
-            updateLanguageUI();
-        });
-
-        // Κινητό Μενού
+        // Mobile Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
-        
+        let isMenuOpen = false;
+
         menuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
             mobileMenu.classList.toggle('hidden');
-        });
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            if(isMenuOpen) {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
         });
 
-        // Φόρμα Επικοινωνίας (Web3Forms API - Αθόρυβη αποστολή)
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Language Switcher Logic
+        const langBtns = [document.getElementById('lang-btn'), document.getElementById('mobile-lang-btn')];
+        const langLabels = [document.getElementById('current-lang'), document.getElementById('mobile-current-lang')];
+        let currentLang = 'gr';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'gr' ? 'en' : 'gr';
+            
+            // Update button labels
+            langLabels.forEach(label => label.textContent = currentLang.toUpperCase());
+            
+            // Toggle visibility of language elements
+            document.querySelectorAll('.lang-gr').forEach(el => {
+                if (currentLang === 'gr') {
+                    el.classList.remove('hidden-lang');
+                } else {
+                    el.classList.add('hidden-lang');
+                }
+            });
+            
+            document.querySelectorAll('.lang-en').forEach(el => {
+                if (currentLang === 'en') {
+                    el.classList.remove('hidden-lang');
+                } else {
+                    el.classList.add('hidden-lang');
+                }
+            });
+        }
+
+        langBtns.forEach(btn => btn.addEventListener('click', toggleLanguage));
+
+        // Modal Logic
+        const modal = document.getElementById('service-modal');
+        const modalBody = document.getElementById('modal-body');
+        const modalContent = document.querySelector('.modal-content');
+
+        function openModal(contentId) {
+            const content = document.getElementById(contentId).innerHTML;
+            modalBody.innerHTML = content;
+            
+            modal.classList.remove('hidden');
+            // Small delay to allow display block to apply before transition
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+            
+            // Re-apply language visibility inside modal based on current state
+            const modalEl = document.getElementById('service-modal');
+            if(currentLang === 'en') {
+                modalEl.querySelectorAll('.lang-gr').forEach(el => el.classList.add('hidden-lang'));
+                modalEl.querySelectorAll('.lang-en').forEach(el => el.classList.remove('hidden-lang'));
+            } else {
+                modalEl.querySelectorAll('.lang-en').forEach(el => el.classList.add('hidden-lang'));
+                modalEl.querySelectorAll('.lang-gr').forEach(el => el.classList.remove('hidden-lang'));
+            }
+            
+            // Re-init icons inside modal
+            lucide.createIcons();
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+
+        // Web3Forms AJAX Form Submission
         const form = document.getElementById('contact-form');
-        const submitBtn = document.getElementById('submit-btn');
-        const btnTextGr = document.getElementById('btn-text-gr');
-        const btnTextEn = document.getElementById('btn-text-en');
-        const formSuccess = document.getElementById('form-success');
-        const formError = document.getElementById('form-error');
+        const result = document.getElementById('form-success');
+        const errorMsg = document.getElementById('form-error');
+        const submitButton = document.getElementById('submit-button');
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Αλλαγή κατάστασης κουμπιού
-            const originalGr = btnTextGr.innerText;
-            const originalEn = btnTextEn.innerText;
-            btnTextGr.innerText = "Αποστολή...";
-            btnTextEn.innerText = "Sending...";
-            submitBtn.disabled = true;
-            submitBtn.classList.add('opacity-50');
-            formSuccess.style.display = 'none';
-            formError.style.display = 'none';
+            // Change button text while sending
+            const originalBtnText = submitButton.innerHTML;
+            submitButton.innerHTML = (currentLang === 'gr') ? 'Αποστολή...' : 'Sending...';
+            submitButton.disabled = true;
+            submitButton.classList.add('opacity-70');
+            
+            // Hide previous messages
+            result.style.display = 'none';
+            errorMsg.style.display = 'none';
 
             const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
 
             fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            })
-            .then(async (response) => {
-                if (response.status == 200) {
-                    form.reset();
-                    formSuccess.style.display = 'block';
-                } else {
-                    formError.style.display = 'block';
-                }
-            })
-            .catch(error => {
-                formError.style.display = 'block';
-            })
-            .finally(() => {
-                btnTextGr.innerText = originalGr;
-                btnTextEn.innerText = originalEn;
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('opacity-50');
-                setTimeout(() => { formSuccess.style.display = 'none'; formError.style.display = 'none'; }, 5000);
-            });
-        });
-
-        // Δεδομένα για τα Modals Υπηρεσιών (Συντομευμένα για την προεπισκόπηση)
-        const servicesData = {
-            'modal-accounting': {
-                icon: '<i data-lucide="calculator" class="w-8 h-8"></i>',
-                gr: { title: 'Λογιστικά & Φοροτεχνικά', content: '<p>Πλήρης λογιστική υποστήριξη, τήρηση βιβλίων, διαχείριση ΦΠΑ και ετήσιες οικονομικές καταστάσεις προσαρμοσμένες στις ανάγκες της εταιρείας σας.</p>' },
-                en: { title: 'Accounting & Tax', content: '<p>Full accounting support, bookkeeping, VAT management, and annual financial statements tailored to your company needs.</p>' }
-            },
-            'modal-payroll': {
-                icon: '<i data-lucide="file-text" class="w-8 h-8"></i>',
-                gr: { title: 'Διαχείριση Μισθοδοσίας', content: '<p>Αναλαμβάνουμε τον υπολογισμό μισθοδοσίας, εισφορών, συμβάσεων και την πλήρη επικοινωνία με ΕΡΓΑΝΗ και ΕΦΚΑ.</p>' },
-                en: { title: 'Payroll Services', content: '<p>We handle payroll calculations, contributions, contracts, and full communication with labor authorities.</p>' }
-            },
-            'modal-establishment': {
-                icon: '<i data-lucide="building" class="w-8 h-8"></i>',
-                gr: { title: 'Ίδρυση Εταιρείας', content: '<p>Πλήρης καθοδήγηση και διεκπεραίωση γραφειοκρατίας για την ίδρυση υποκαταστημάτων ή νέων νομικών μορφών (Ι.Κ.Ε., Ε.Π.Ε., Α.Ε.) στην Ελλάδα.</p>' },
-                en: { title: 'Establishment in Greece', content: '<p>Full guidance and bureaucracy handling for establishing branches or new legal entities in Greece.</p>' }
-            }
-        };
-
-        const modal = document.getElementById('service-modal');
-        const modalContentDiv = document.querySelector('.modal-content');
-
-        function openModal(serviceId) {
-            const data = servicesData[serviceId];
-            if (!data) return;
-            
-            document.getElementById('modal-icon').innerHTML = data.icon;
-            document.getElementById('modal-title-text').innerText = data[currentLang].title;
-            document.getElementById('modal-content').innerHTML = data[currentLang].content;
-            
-            modal.style.display = 'flex';
-            // Animation timeout
-            setTimeout(() => {
-                modal.classList.remove('opacity-0', 'pointer-events-none');
-                modalContentDiv.classList.remove('scale-95');
-            }, 10);
-            document.body.style.overflow = 'hidden';
-            lucide.createIcons();
-        }
-
-        function closeModal() {
-            modal.classList.add('opacity-0', 'pointer-events-none');
-            modalContentDiv.classList.add('scale-95');
-            setTimeout(() => {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }, 300);
-        }
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.style.display = 'block';
+                        form.reset();
+                    } else {
+                        console.log(response);
+                        errorMsg.style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    errorMsg.style.display = 'block';
+                })
+                .finally(() => {
+                    // Reset button
+                    submitButton.innerHTML = originalBtnText;
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('opacity-70');
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        result.style.display = 'none';
+                    }, 5000);
+                });
         });
     </script>
 </body>
